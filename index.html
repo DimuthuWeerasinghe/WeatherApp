@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="weather-app">
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="date-time" id="date&time"></div>
+      <div class="search-bar">
+        <input type="text" placeholder="Enter city " id="searchBar">
+        <button onclick="weather()">Search</button>
+      </div>
+    </nav>
+
+    <!-- Current Weather -->
+    <div class="current-weather">
+      <h2 id="location"></h2>
+      <img src="" alt="Weather Icon" id="weatherIcon" />
+      <h1 id="currentTemp">27°C</h1>
+      <p id="currentText">Sunny</p>
+      <div class="extra-info">
+        <span id="wind"></span>
+        <span id="Humidity">Humidity: 60%</span>
+      </div>
+    </div>
+
+    <!-- 6-day Forecast -->
+    <div class="forecast">
+      <div class="forecast-card">
+        <h4>Monday</h4>
+        <img src="https://via.placeholder.com/50" alt="Weather Icon" />
+        <p>High: 30°C</p>
+        <p>Low: 24°C</p>
+      </div>
+      <div class="forecast-card">
+        <h4>Tuesday</h4>
+        <img src="https://via.placeholder.com/50" alt="Weather Icon" />
+        <p>High: 29°C</p>
+        <p>Low: 22°C</p>
+      </div>
+      <div class="forecast-card">
+        <h4>Wednesday</h4>
+        <img src="https://via.placeholder.com/50" alt="Weather Icon" />
+        <p>High: 28°C</p>
+        <p>Low: 23°C</p>
+      </div>
+      <div class="forecast-card">
+        <h4>Thursday</h4>
+        <img src="https://via.placeholder.com/50" alt="Weather Icon" />
+        <p>High: 31°C</p>
+        <p>Low: 25°C</p>
+      </div>
+      <div class="forecast-card">
+        <h4>Friday</h4>
+        <img src="https://via.placeholder.com/50" alt="Weather Icon" />
+        <p>High: 32°C</p>
+        <p>Low: 26°C</p>
+      </div>
+      <div class="forecast-card">
+        <h4>Saturday</h4>
+        <img src="https://via.placeholder.com/50" alt="Weather Icon" />
+        <p>High: 30°C</p>
+        <p>Low: 24°C</p>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
